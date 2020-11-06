@@ -18,5 +18,5 @@ def readExel(fileTxt):
         reader.close()
     return []
 
-arr=readExel('input.txt')
-print(arr)
+rows=readExel('input.txt')
+print(rows)
