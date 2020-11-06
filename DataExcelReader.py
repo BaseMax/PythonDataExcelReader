@@ -1,5 +1,8 @@
+# Python Data Excel Reader
 # Max Base
-# 
+# https://github.com/BaseMax/PythonDataExcelReader
+# 2020-11-06
+
 import json
 
 def readExel(fileTxt):
@@ -20,3 +23,6 @@ def readExel(fileTxt):
 
 rows=readExel('input.txt')
 print(rows)
+output = open("output.json", "w")
+output.write( json.dumps(rows))
+output.close()
