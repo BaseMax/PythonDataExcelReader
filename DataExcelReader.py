@@ -21,8 +21,15 @@ def readExel(fileTxt):
         reader.close()
     return []
 
+# Convert into array
 rows=readExel('input.txt')
 print(rows)
+
+# Generate JSON
+data=json.dumps(rows)
+# print(data)
+
+# Create JSON file
 output = open("output.json", "w")
-output.write( json.dumps(rows))
+output.write(data)
 output.close()
